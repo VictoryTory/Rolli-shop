@@ -156,51 +156,23 @@
 						<!-- cart-wrapper -->
 						<div class="cart-wrapper">
 
-							<!-- Cart item -->
-							<div class="cart-item" data-id="02">
-								<div class="cart-item__top">
-									<div class="cart-item__img">
-										<img src="img/roll/california-tempura.jpg" alt="">
-									</div>
-									<div class="cart-item__desc">
-										<div class="cart-item__title">California tempura</div>
-										<div class="cart-item__weight">6 p. / 205g.</div>
-
-										<!-- cart-item__details -->
-										<div class="cart-item__details">
-
-											<div class="items items--small counter-wrapper">
-												<div class="items__control" data-action="minus">-</div>
-												<div class="items__current" data-counter="">1</div>
-												<div class="items__control" data-action="plus">+</div>
-											</div>
-
-											<div class="price">
-												<div class="price__currency">250 ₴</div>
-											</div>
-
-										</div>
-										<!-- // cart-item__details -->
-
-									</div>
-								</div>
-							</div>
-							<!-- // Cart item -->
-
 						</div>
 						<!-- // cart-wrapper -->
 
 						<!-- Price order -->
 						<div class="cart-total">
-							<p><span class="h5">Delivery:</span> <span class="delivery-cost free">Free</span> </p>
-							<p><span class="h5">Together:</span> <span class="total-price">330</span> <span class="rouble">₴</span></p>
+							<p data-cart-delivery class="none">
+								<span class="h5">Delivery:</span>
+								<span class="delivery-cost">100 ₴</span>
+								<br><span class="small">Free from 600 ₴</span>
+							</p>
+							<p><span class="h5">Together:</span> <span class="total-price">0</span> <span class="hryvni">₴</span></p>
 						</div>
 						<!-- // The cost of the order -->
-
 					</div>
 
 					<!-- To order -->
-					<div id="order-form" class="card-body border-top">
+					<div id="order-form" class="card-body border-top  none">
 						<h5 class="card-title">To order</h5>
 						<form>
 							<div class="form-group">
@@ -221,7 +193,10 @@
 
 	<!-- Connect the scripts -->
 <!--	<script src="js/counter-01.js"></script>-->
+	<script src="js/calcCartPrice.js"></script>
+	<script src="js/toggleCartStatus.js"></script>
 	<script src="js/counter-02.js"></script>
+	<script src="js/cart-02.js"></script>
 </body>
 
 </html>
